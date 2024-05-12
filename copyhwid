@@ -1,0 +1,8 @@
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
+setclipboard(HWID)
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Loot.fun",
+Text = "Copied HWID, Send this in your ticket!",
+Duration = 2,
+})
