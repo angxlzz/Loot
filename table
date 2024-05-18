@@ -1,5 +1,6 @@
 getgenv().Loot = {
     ['Options'] = {
+        ['LuarmorKey'] = "KeyHere", -- put your LuaArmor key here.. dont be fucking stupid or it wont work
         ['Notifications'] = false,
         ['FOVType'] = "Mouse" , --// PredictionPoint and Mouse
     },
