@@ -1,14 +1,14 @@
 getgenv().Loot = {
-    Options = {
-        ['Notifications'] = true,
-        ['FOVMode'] = "Mouse" , --// PredictionPoint and Mouse * Silent aim Modes *
+    ['Options'] = {
+        ['Notifications'] = false,
+        ['FOVType'] = "Mouse" , --// PredictionPoint and Mouse
     },
     ['AimAssist'] = {
         ['Main'] = {
             ['Enabled'] = true,
-            ['Key'] = "c", -- make it lowercase nigger
+            ['Key'] = "C",
             ['SmoothLock'] = true,
-            ['Smoothness'] = 0.025,
+            ['Smoothness'] = 0.28,
             ['PredictMovement'] = false,
             ['Prediction'] = 0.135,
             ['Shake'] = false,
@@ -27,30 +27,53 @@ getgenv().Loot = {
     ["SilentAim"] = {
         ['Main'] = {
             ['Enabled'] = true,
-            ['Mode'] = "Target", --// Regular, Target (regular doesnt work right now)
+            ['Mode'] = "Target", --// Regular and Target (regular doesnt work right now)
             ['KeyBind'] = 'C',
-            ['Prediction'] = 0.1352,
+            ['Prediction'] = 0.1282,
             ['Parts'] = {"Head","LowerTorso","UpperTorso","HumanoidRootPart","LeftLowerArm","RightLowerArm","LeftUpperArm","RightUpperArm","LeftLowerLeg","LeftUpperLeg","RightLowerLeg","RightUpperLeg"},
-            ['AntiGroundShots'] = true,
             ['OverrideYaxis'] = true, --// Makes Silent Aim Alot More Legit
             ['AntiCurve'] = true,
             ['ClosestPoint'] = true
+
         },
         ['FOV'] = {
             ['ShowFOV'] = true,
-            ['Radius'] = 40,
+            ['Radius'] = 70,
             ['Color'] = Color3.fromRGB(255, 255, 255),
             ['Filled'] = false,
             ['Transparency'] = 0.8
         }
     },
     ['Snapline'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Color'] = Color3.fromRGB(255, 255, 255),
         ['Transparency'] = 0.4,
-        ['Visible'] = true
+        ['Visible'] = false
     },
-    ['AutoPrediction'] = { 
+    ['Extra'] = {
+        ['TrashTalk'] = true
+    },
+    ['CFrame'] = {
+        ['Enabled'] = true,
+        ['Toggle'] = "V"
+    },
+    ['Desync'] = {
+        ['Enabled'] = true,
+        ['Key'] = Enum.KeyCode.X,
+        ['DirectionToShoot'] = "Behind"
+    },
+    ['Visuals'] = {
+        ['DistanceESP'] = true,
+        ['WeaponESP'] = false,
+        ['HealthBar'] = true,
+        ['NameESP'] = false,
+        ['Radar'] = true
+    },
+    ['WaterMark'] = {
+        ['Enabled'] = false,
+        ['ShowFPS'] = true
+    },
+    ['AutoPrediction'] = { -- current sets are Bad
         ['Enabled'] = true,
         ['ping20_30'] = 0.12588,
         ['ping30_40'] = 0.11911,
@@ -70,15 +93,5 @@ getgenv().Loot = {
         ['ping170_180'] = 0.1672,
         ['ping180_190'] = 0.1848,
         ['ping190_200'] = 0.1865,
-    },
-    ['Extra'] = {
-        ['WaterMark'] = false,
-        ['DistanceESP'] = true,
-        ['WeaponESP'] = false,
-        ['CFrame'] = false,
-        ['TrashTalk'] = true,
-        ['HealthBar'] = false,
-        ['NameESP'] = false,
-        ['RadarESP'] = false
-    },
- }
+    }
+}
